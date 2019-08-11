@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import FormFab from './components/FormFab';
+import MobileForm from './components/MobileForm';
+
 
 function App() {
   return (
@@ -11,8 +12,7 @@ function App() {
         <p>
           Click on the button to open the form.
         </p>
-        <FormFab />
-
+        <MobileForm></MobileForm>
       </header>
       <div>
       </div>
