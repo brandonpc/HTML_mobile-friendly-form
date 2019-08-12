@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
+// import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import MailRounded from '@material-ui/icons/MailRounded';
 import Fab from '@material-ui/core/Fab';
@@ -42,12 +42,22 @@ function MobileForm() {
                 <MailRounded></MailRounded>
             </Fab>
             <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-                <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+                <DialogTitle id="form-dialog-title">Contact Us</DialogTitle>
                 <DialogContent>
-                    <DialogContentText>
+                    {/* <DialogContentText>
                         To subscribe to this website, please enter your email address here. We will send updates
                         occasionally.
-          </DialogContentText>
+          </DialogContentText> */}
+                    {/* Full Name */}
+                    <TextField
+                        autoFocus
+                        margin="dense"
+                        id="name"
+                        label="Full Name"
+                        type="text"
+                        fullWidth
+                    />
+                    {/* Email */}
                     <TextField
                         autoFocus
                         margin="dense"
@@ -56,6 +66,48 @@ function MobileForm() {
                         type="email"
                         fullWidth
                     />
+                    {/* Phone Number */}
+                    <TextField
+                        autoFocus
+                        margin="dense"
+                        id="name"
+                        label="Phone Number"
+                        type="text"
+                        fullWidth
+                        required
+                    />
+                    {/* city */}
+                    <TextField
+                        autoFocus
+                        margin="dense"
+                        id="name"
+                        label="City"
+                        type="text"
+                        fullWidth
+                        required
+                    />
+                    {/* state */}
+                    <TextField
+                        autoFocus
+                        margin="dense"
+                        id="name"
+                        label="State"
+                        type="text"
+                        fullWidth
+                        required
+                    />
+                    {/* zip */}
+                    <TextField
+                        autoFocus
+                        margin="dense"
+                        id="name"
+                        label="Zipcode"
+                        type="text"
+                        fullWidth
+                        required
+                    />
+                    {/* yes/no question */}
+                    {/* multi-choice (dropdown or checkbox) */}
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose} color="primary">
