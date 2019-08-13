@@ -9,7 +9,8 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import MailRounded from '@material-ui/icons/MailRounded';
 import Fab from '@material-ui/core/Fab';
 import { makeStyles } from '@material-ui/core/styles';
-
+import { CheckCircleRounded, NotInterestedRounded } from "@material-ui/icons";
+import IconButton from "@material-ui/core/IconButton";
 
 const useStyles = makeStyles(theme => ({
     fab: {
@@ -35,6 +36,20 @@ function MobileForm() {
     function handleClose() {
         setOpen(false);
     }
+
+    // ICON BTTN
+    const iconButton = makeStyles(theme => ({
+        button: {
+            margin: theme.spacing(1)
+        },
+        input: {
+            display: "none"
+        }
+    }));
+
+    const iconBttnClass = iconButton();
+
+    // END ICON BTTN
 
     return (
         <div>
@@ -110,12 +125,24 @@ function MobileForm() {
                     {/* multi-choice (dropdown or checkbox) */}
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose} color="primary">
-                        Cancel
-          </Button>
-                    <Button onClick={handleClose} color="primary">
-                        Subscribe
-          </Button>
+                    <IconButton
+                        className={iconBttnClass.button}
+                        aria-label='Create'
+                        onClick={handleClose}
+                        color='secondary'
+                    >
+                        <NotInterestedRounded fontSize='large' />
+                    </IconButton>
+                    <IconButton
+                        className={iconBttnClass.button}
+                        aria-label='Create'
+                        onClick={handleClose}
+                        color='primary'
+                        type='submit'
+                        label='submit'
+                    >
+                        <CheckCircleRounded fontSize='large' />
+                    </IconButton>
                 </DialogActions>
             </Dialog>
         </div>
