@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MobileForm from './components/MobileForm';
-
+import ValidateExample from './components/ValidateExample';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           Click on the button to open the form.
         </p>
         <MobileForm></MobileForm>
+        <ValidateExample />
       </header>
       <div>
       </div>

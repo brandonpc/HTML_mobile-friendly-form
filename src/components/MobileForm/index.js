@@ -11,7 +11,21 @@ import Fab from '@material-ui/core/Fab';
 import { makeStyles } from '@material-ui/core/styles';
 import { CheckCircleRounded, NotInterestedRounded } from "@material-ui/icons";
 import IconButton from "@material-ui/core/IconButton";
+// BELOW : VALIDATION
+// import { Formik, Form, Field } from 'formik';
+// import * as Yup from 'yup';
 
+// function validateEmail(value) {
+//     let error;
+//     if (!value) {
+//         error = 'Required';
+//     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
+//         error = 'Invalid email address';
+//     }
+//     return error;
+// }
+
+// END : VALIDATION
 
 const useStyles = makeStyles(theme => ({
     fab: {
@@ -64,7 +78,7 @@ function MobileForm() {
                         To subscribe to this website, please enter your email address here. We will send updates
                         occasionally.
           </DialogContentText> */}
-                    {/* Full Name */}
+                    {/* First Name */}
                     <TextField
                         autoFocus
                         margin="dense"
