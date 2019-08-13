@@ -9,7 +9,10 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.0",
-    "react-select": "^3.0.4"
+    "react-select": "^3.0.4",
+    "uniforms": "^2.3.0",
+    "uniforms-bridge-graphql": "^2.3.0",
+    "uniforms-semantic": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

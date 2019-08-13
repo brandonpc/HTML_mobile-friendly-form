@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -11,6 +11,7 @@ import Fab from '@material-ui/core/Fab';
 import { makeStyles } from '@material-ui/core/styles';
 import { CheckCircleRounded, NotInterestedRounded } from "@material-ui/icons";
 import IconButton from "@material-ui/core/IconButton";
+
 
 const useStyles = makeStyles(theme => ({
     fab: {
@@ -125,10 +126,11 @@ function MobileForm() {
                     {/* multi-choice (dropdown or checkbox) */}
                 </DialogContent>
                 <DialogActions>
+                    {/* TODO: replace with default buttons/make better ux w/ icons */}
                     <IconButton
                         className={iconBttnClass.button}
                         aria-label='Create'
-                        onClick={handleClose}
+                        // onClick={handleClose}
                         color='secondary'
                     >
                         <NotInterestedRounded fontSize='large' />
@@ -136,7 +138,7 @@ function MobileForm() {
                     <IconButton
                         className={iconBttnClass.button}
                         aria-label='Create'
-                        onClick={handleClose}
+                        // onClick={handleClose}
                         color='primary'
                         type='submit'
                         label='submit'
